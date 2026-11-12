@@ -1,0 +1,23 @@
+{
+  "name": "mcp-scaffold-al",
+  "version": "1.0.0",
+  "description": "Servidor MCP para generar automáticamente un monorepo con Arquitectura Limpia (Deno + Hono + Drizzle + Next.js) y archivos de contexto para IA",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-scaffold-al": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader tsx/esm src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
